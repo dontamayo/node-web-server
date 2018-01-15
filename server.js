@@ -2,8 +2,13 @@ console.log('express app');
 
 const express = require('express');
 const PORT = 3000;
-
 let app = express();
+
+//middleware
+app.use(express.static(__dirname + '/public'));
+
+
+
 
 app.get('/', (req, res) =>{
   //res.send('<h1>hello express! PORT</h1>');
@@ -33,4 +38,6 @@ app.get('/contact', (req,res) => {
 });
 
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log("server is up on post localhost:3000");
+});
