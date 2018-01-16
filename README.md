@@ -10,4 +10,9 @@
 5. Express middleware
 * logs on the screen
 * keep tracks of how our servers are working
-6.
+6. Adding Version Control
+* git
+*.gitignore = ignoring the node modules to avoid outdated packages and reinstall it when pulling out.
+7. github SSH
+* setting up SSH key
+8. Heroku

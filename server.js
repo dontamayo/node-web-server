@@ -2,7 +2,7 @@ console.log('express app');
 
 const express = require('express');
 const hbs = require('hbs');
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 const fs = require('fs');
 let app = express();
 
@@ -60,6 +60,6 @@ app.get('/contact', (req,res) => {
 });
 
 
-app.listen(PORT, () => {
-  console.log("server is up on port  localhost:3000");
+app.listen(port, () => {
+  console.log(`server is up on port  ${port}`);
 });
